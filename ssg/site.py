@@ -37,7 +37,7 @@ class Site:
                 self.create_dir(path)
             elif path.is_file():
                 self.run_parser(path)
-        hooks.event("stats", self.source, self.parsers)
+        hooks.event("stats")
 
 
     @staticmethod
